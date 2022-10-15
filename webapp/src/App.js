@@ -3,16 +3,16 @@ import './App.css';
 
 import reportWebVitals from './reportWebVitals';
 import { Routes, Route} from 'react-router-dom';
-import homepage from './Components/homepage';
-import mcorp from './Components/mcorp';
-import person from './Components/person';
+import Muncipal from './Components/Muncipal';
+import Homepage from './Components/Homepage';
+import Person from './Components/Person';
 import Example from './Components/Example';
 function App() {
   return (
     <Routes>
-      <Route path ='/' element = {<homepage/>}/>
-      <Route path='/user' element={<person/>}/>
-      <Route path='/muncipal' element={<mcorp/>}/>
+      <Route path ='/' element = {<Homepage/>}/>
+      <Route path='/user' element={<Person/>}/>
+      <Route path='/muncipal' element={<Muncipal/>}/>
       <Route path='/ee' element={<Example/>}/>
     </Routes>
   );
